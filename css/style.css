@@ -18,8 +18,8 @@ body {
 
 .card {
 	width: 1170px;
-	    margin: 40px auto 0;
-	    text-align: center;
+	margin: 40px auto 0;
+	text-align: center;
 	/* width: 1170px;
 	text-align: center;
 	position: absolute;
@@ -67,6 +67,7 @@ body {
 .card__gallary {
 	font-size: 0;
 	height: 100%;
+	position: relative;
 }
 
 .card__arrow--left,
@@ -78,7 +79,7 @@ body {
 	width: 14px;
 	cursor: pointer;
 	position: absolute;
-	top: 75%;
+	/* top: 50%; */
 	-webkit-transform: translate(-50%, -50%);
 	   -moz-transform: translate(-50%, -50%);
 	    -ms-transform: translate(-50%, -50%);
@@ -94,11 +95,13 @@ body {
 .card__arrow--left {
 	background-image: url("../img/angle-left.png");
 	left: 30px;
+	top: 40%;
 }
 
 .card__arrow--right {
 	background-image: url("../img/angle-right.png");
 	right: 20px;
+	top: 40%;
 }
 
 .card__arrow--left:hover,
